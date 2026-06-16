@@ -1,0 +1,79 @@
+/* ========== 藩镇·裂土 全局样式 ========== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+  background: linear-gradient(135deg, #1a0e08 0%, #2c1810 50%, #3d2418 100%);
+  color: #f4e4bc;
+  overflow: hidden;
+  user-select: none;
+}
+
+#game-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#version-tag {
+  position: fixed;
+  bottom: 6px;
+  right: 12px;
+  font-size: 11px;
+  color: #8a6a4a;
+  opacity: 0.6;
+  pointer-events: none;
+  font-family: monospace;
+}
+
+/* 隐藏 Phaser canvas 的默认 outline */
+canvas {
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+}
+
+/* UI 元素通用样式 */
+.btn {
+  background: linear-gradient(180deg, #c8a25a 0%, #8a6a2e 100%);
+  color: #1a0e08;
+  border: 2px solid #5d3e1f;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(180deg, #e0b96e 0%, #a07a3e 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  background: #555;
+  color: #999;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #d4a030 0%, #a07020 100%);
+}
+
+.panel {
+  background: rgba(20, 10, 5, 0.85);
+  border: 2px solid #8a6a4a;
+  border-radius: 8px;
+  padding: 12px;
+  backdrop-filter: blur(4px);
+}
